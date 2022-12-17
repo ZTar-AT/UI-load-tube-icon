@@ -1,0 +1,115 @@
+:root {
+    /* ฟอนต์ */
+    --font: Arial, Helvetica, sans-serif;
+    --font_color: white;
+
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    color: var(--font_color);
+}
+body{
+    background-color: #0000007d;
+}
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1vw;
+    width: 20vw;
+    height: 10vw;
+ 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-left,
+.box-right {
+    width: 9.5vw;
+    height: 10vw;
+    border-radius: 15px;
+
+    background-color: #191a1d8f;
+}
+
+.box-left {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto auto;
+    column-gap: 0.1vw;
+    padding: 0.5vw;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.box-right{
+    display: grid;    
+    background-color: transparent;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto auto;
+    border-radius: 0;
+    column-gap: 01vw;
+    padding: 0 0.5vw;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.circle {
+    position: relative;
+    overflow: hidden;
+
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #3233358f;
+}
+
+.circle>img {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progasbar {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    /* background-color: #1d94ff; */
+    background-color: #35d857;
+}
+.box-vertical{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #3233358f;
+}
+.box-vertical>img {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    left: 50%;
+    top:  80%;
+    transform: translate(-50%, -50%);
+}
+.progasbar-vertical{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    /* background-color: #1d94ff; */
+    background-color: white;
+}
